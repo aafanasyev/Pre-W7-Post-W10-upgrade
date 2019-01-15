@@ -2,13 +2,13 @@
 This repository contains two PowerShell scripts: pre (W7) and post(W10) upgrade.
 
 
-#Pre-upgrade script 
+# Pre-upgrade script 
 
 It is used on Windows 7  to check some compliences that are useful in Active Directory environment. It contains checks of:
 - Check to which collection machine is assigned to.
 - Version of SCCM client.
 
-#Post-upgrade script
+# Post-upgrade script
 It used on Windows 10 to provide some acctions. 
 - Remove Windows 10 Built-In application as they defined in Excel or CSV file.
 - Excel might be not installed on a machine. Excel file need to be converted in to CSV manually.
