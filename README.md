@@ -9,7 +9,7 @@ It is used on Windows 7  to check some compliances that are useful in the Active
 - A version of SCCM client.
 
 # Post-upgrade script
-It used on Windows 10 to provide some actions. 
+It used on Windows 10 to provide following actions:
 - Remove Windows 10 Built-In application as they defined in Excel or CSV file.
 - Excel might be not installed on a machine. Excel file needs to be converted into CSV manually.
 - Check if machine assigned to a specific AD collection.
