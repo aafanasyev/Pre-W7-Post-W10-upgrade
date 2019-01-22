@@ -8,6 +8,38 @@ It is used on Windows 7  to check some compliances that are useful in the Active
 - Check to which collection machine is assigned to.
 - A version of SCCM client.
 
+## Important modules:
+To get computer information:
+`Get-WmiObject -Class Win32_ComputerSystem` 
+`Get-WmiObject -Class Win32_OperatingSystem`
+To get AD information:
+`New-Object System.DirectoryServices.DirectorySearcher`
+`New-Object System.DirectoryServices.DirectoryEntry`
+To get SMMC collection:
+`Get-CMCollection`
+`Get-CMCollectionMember`
+SCCM Client Version
+`Get-WMIObject -Namespace root\ccm -Class SMS_Client`
+User Profiles to backup
+Get-WMIObject -Class Win32_UserProfile
+Windows Update
+`New-Object -COM Microsoft.Update.Session`
+Storage Volumes
+`Get-Volume`
+Software Compatibility
+`---`
+Snapshots
+`Get-ItemProperty HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*`
+`Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*`
+NetworkShares
+`Get-WmiObject -Class Win32_Share`
+`Get-WmiObject -Class Win32_LogicalShareSecuritySetting`
+Printers
+`Get-WMIObject -Class Win32_Printer`
+Convert output to HTML:
+`ConvertTo-HTML`
+
+
 # Post-upgrade script
 It used on Windows 10 to provide following actions:
 - Remove Windows 10 Built-In application as they defined in Excel or CSV file.
