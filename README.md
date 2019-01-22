@@ -77,3 +77,6 @@ It used on Windows 10 to provide following actions:
 **NOTE** It is possible to convert an Excel file into CSV using PowerShell. It can be done even on a machine where MS Office 2007+ is not installed. Read data from Excel files requires an OLE DB. It is installed by default on Windows 10. However, Excel data can be stored in two types of file extensions ".xls" or ".xlsx". 
 
 For the first a "Microsoft.Jet.OLEDB.4.0" driver is needed. It is an old driver and works only in 32 bits PowerShell. For the second a "Microsoft.ACE.OLEDB.12.0" driver is needed. This driver is not installed by default and requires 2007 Office System Driver: Data Connectivity Components and Microsoft Access Database Engine 2010 Redistributable. This overcomplicates Post upgrade process so it is not used in a script.
+
+
+## Important modules:
